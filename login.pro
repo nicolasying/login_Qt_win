@@ -21,3 +21,12 @@ HEADERS  += mainwindow.h \
 
 FORMS    += mainwindow.ui \
     logindialog.ui
+
+RC_FILE += \
+    ico.rc
+
+DISTFILES += \
+    Nicolas.ico \
+    ico.rc
+
+

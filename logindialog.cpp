@@ -19,7 +19,7 @@ void LoginDialog::on_pushButtonLogin_clicked()
     if(ui->lineEditLogin->text().trimmed() == "Nicolas" && ui->lineEditPsw->text() == "010101" )
         accept();
     else {
-        QMessageBox::warning(this, tr("Warning"), tr("user name or password error!"), QMessageBox::OK);\
+        QMessageBox::warning(this, tr("Warning"), tr("Wrong combination of username and password."), QMessageBox::Yes);\
         // ui->lineEditLogin->clear();
         ui->lineEditPsw->clear();
         ui->lineEditPsw->setFocus();
